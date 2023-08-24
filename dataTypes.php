@@ -29,3 +29,5 @@ $result = "$a + $b <br>";
 echo $result;
 $result = '$a + $b';
 echo $result;
+
+$text = "Модель "Apple II"";
