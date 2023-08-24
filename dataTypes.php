@@ -21,3 +21,11 @@ $a3 = 6E-8; // 0.00000006
 // Тип bool
 $foo = true;
 $boo = false;
+
+//Тип string
+$a = 10;
+$b = 5;
+$result = "$a + $b <br>";
+echo $result;
+$result = '$a + $b';
+echo $result;
