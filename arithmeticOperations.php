@@ -44,4 +44,16 @@ $b = 3 <=> 2; // 1 - значение слева больше чем справ�
 $c = 1 <=> 2; // -1 значение слева меньше чем справа
 echo "a = {$a} b = {$b} c = {$c}"; // a=0 b=1 c=-1
 
+// Логические операции
+$a = (true && false); // false
+$a = (true and false); // false
+
+$b = (true || false); // true
+$b = (true or false); // true
+
+$c = !true; // false
+
+$a = (true xor true); // false
+$b = (false xor true); //true
+$c = (false xor false); // false 
 
