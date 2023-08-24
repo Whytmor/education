@@ -30,4 +30,5 @@ echo $result;
 $result = '$a + $b';
 echo $result;
 
-$text = "Модель "Apple II"";
+$text = "Модель \"Apple II\"";
+echo $text;
