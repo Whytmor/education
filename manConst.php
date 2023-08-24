@@ -18,3 +18,10 @@ if ($a > 0) {
     echo 'Переменная а равна нулю';
 }
 
+// Определение условия
+if (0) {} // false
+if (-0.0) {} // false
+if (-1) {} // true
+if ("") {} // false
+if ("a") {} // true
+if (null) {} // false
