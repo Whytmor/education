@@ -27,8 +27,15 @@ $a = 10;
 $b = 5;
 $result = "$a + $b <br>";
 echo $result;
+
 $result = '$a + $b';
 echo $result;
 
 $text = "Модель \"Apple II\"";
 echo $text;
+
+// значение null (переменная не имеет значения)
+$a = null; 
+echo "a = {$a}";
+
+
