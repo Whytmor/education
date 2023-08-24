@@ -59,4 +59,25 @@ $a = -5;
 </body>
 </html>
 
+// Альтернативный синтаксис
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset='utf-8'>
+</head>
+<body>
+<?php $a = 0; ?>
+
+<?php if ($a > 0): ?>
+    <h2>Переменная а больше нуля</h2>
+<?php elseif ($a < 0): ?>
+    <h2>Переменная а меньше нуля</h2>
+<?php else: ?>
+    <h2>Переменная а равна нулю</h2>
+<?php endif; ?>
+</body>
+</html>
+
+
 
