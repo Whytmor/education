@@ -97,4 +97,10 @@ switch (8.0) {
 }
 echo $result; //строка
 
+match (8.0) {
+    '8.0' => $result = 'строка',
+    8.0 => $result = 'число',
+ };
+ echo $result; // число
+
 
