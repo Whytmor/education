@@ -87,4 +87,14 @@ match ($a)
 };
 echo $operation;
 
+switch (8.0) {
+    case '8.0':
+        $result = 'строка';
+        break;
+    case 8.0:
+        $result = 'число';
+        break;
+}
+echo $result; //строка
+
 
