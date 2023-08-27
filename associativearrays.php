@@ -25,3 +25,9 @@ $words = ['red' => 'красный', 'blue' => 'синий', 'grenn' => 'зел�
 foreach ($words as $eng => $rus) {
     echo "{$eng} : {$rus}";
 }
+
+//Смешанные массивы
+$data = [1 => 'Tom', 'id132' => 'Sam', 56 => 'Bob'];
+echo $data[1]; // Tom
+echo '<br />';
+echo $data['id132']; // Sam
