@@ -2,7 +2,7 @@
 
 $number = 89;
 
-$showNumber = function ()
+$showNumber = function () use ($number)
 {
     echo $number;
 };
