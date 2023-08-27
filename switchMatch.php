@@ -53,4 +53,38 @@ switch($a):
         break;
 endswitch;
 
+$a = 2;
+switch ($a) 
+{
+    case 1: 
+        $operation = 'сложени';
+        break;
+    case 2:
+        $operation = 'вычитание';
+        break;
+    default: 
+    $operation = 'действие по умолчанию';
+    break;
+}
+echo $operation;
+
+$a = 2; 
+$operation = match($a)
+{
+    1 => 'сложение',
+    2 => 'вычитание',
+    default => 'действие по умолчанию',
+
+};
+
+$a = 2;
+match ($a) 
+{
+    1 => $operation = 'сложение',
+    2 => $operation = 'вычитание',
+    default => $operation = 'действие по умолчанию',
+
+};
+echo $operation;
+
 
