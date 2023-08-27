@@ -46,7 +46,7 @@ do {
     $counter++;
 } while($counter < 10);
 
-//Оператор continue
+//Оператор break
 for ($i = 1; $i < 10; $i++) {
     $result - $i * $i;
     if ($result > 80) {
