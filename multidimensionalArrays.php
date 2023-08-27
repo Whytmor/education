@@ -10,6 +10,26 @@ echo $families[0][0] . '<br />'; // tom
 echo $families[0][1] . '<br />'; // alice
 echo $families[1][0] . '<br />'; // bob
 echo $families[1][1] . '<br /'; // kate
-
-
 ?>
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta charset='utf8'>
+    </head>
+    <body>
+        <table>
+            <?php
+            $families = [['Tom', 'Alice'],['Bob', 'Kate'], ['Sam', 'Mary']];
+            foreach ($families as $family) {
+                echo "<tr>";
+                foreach ($family as $user) {
+                    echo "<td> {$user} </td>";
+                }
+                echo "</tr>";
+            }
+            ?>
+        </table>
+    </body>
+</html>
