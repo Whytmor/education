@@ -69,6 +69,15 @@ echo $families[1][1] . '<br /'; // kate
             }
             echo "</ul>";
         }
+        print_r($gadgets);
+
+        $gadgets['phones']['nokia'] = 'Nokia 9';
+        echo $gadgets['phones']['nokia'];
+        print_r($gadgets);
         ?>
     </body>
 </html>
+
+<?php 
+
+?>
