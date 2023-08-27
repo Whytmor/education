@@ -38,3 +38,19 @@ switch($a)
         echo 'Действие по умолчанию';
         break;
 }
+
+$a = 3; 
+switch($a):
+
+    case 1:
+        echo 'сложение';
+        break;
+    case 2:
+        echo 'вычитание';
+        break;
+    default:
+        echo 'действие по умолчанию';
+        break;
+endswitch;
+
+
