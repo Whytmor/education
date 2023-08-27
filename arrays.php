@@ -53,3 +53,10 @@ echo $numbers[2]; // 4
 
 $numbers = [4 => 16, 25, 36, 49, 64];
 print_r($numbers);
+
+// Перебор массива (for)
+$users = ['Tom', 'Sam', 'Bob', 'Alice'];
+$num = count($users);
+for ($i = 0; $i < $num; $i++) {
+    echo "{$users[$id]} <br />";
+}
