@@ -22,3 +22,19 @@ for ($i = 1; $i < 10; $i++):
     echo "Квадраn числа $i равен" . $i * $i . "<br/>";
 endfor;
 
+//цикл while
+$countr = 1;
+while ($counter < 10) {
+    echo $counter * $counter . "<br />";
+    $counter++;
+}
+
+$counter = 0; 
+while ($counter < 10)
+    echo $counter * $counter . "<br />";
+
+$couner = 1;
+while ($couner < 10):
+    echo $couner * $counter . "<br />";
+    $counter;
+endwhile;
