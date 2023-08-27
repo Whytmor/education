@@ -19,3 +19,9 @@ $countries["France"] = "Paris";
 $countries["Spain"] = "Madrid";
 $countries["Italy"] = "Rome";
 echo $countries["Italy"]; // Rome
+
+$words = ['red' => 'красный', 'blue' => 'синий', 'grenn' => 'зеленый'];
+
+foreach ($words as $eng => $rus) {
+    echo "{$eng} : {$rus}";
+}
