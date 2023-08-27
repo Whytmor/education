@@ -38,3 +38,12 @@ while ($couner < 10):
     echo $couner * $counter . "<br />";
     $counter;
 endwhile;
+
+//цикл do..while
+$counter = 1;
+do {
+    echo $counter * $counter . "<br />";
+    $counter++;
+} while($counter < 10);
+
+
