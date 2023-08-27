@@ -60,3 +60,16 @@ $num = count($users);
 for ($i = 0; $i < $num; $i++) {
     echo "{$users[$id]} <br />";
 }
+
+// Перебор массива (foreach)
+//Извлечение элемента массива
+$users = [1 => 'Tom', 4 => 'Sam', 5 => 'Bob', 21 => 'Alice'];
+foreach ($users as $element) {
+    echo "{$element} <br />";
+}
+
+//Извлечение ключа и его элемента
+$users = [1 => 'Tom', 4 => 'Sam', 5 => 'Bob', 21 => 'Alice'];
+foreach ($users as $key => $value) {
+    echo "{$key} - {$value} <br />";
+}
