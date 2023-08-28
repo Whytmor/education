@@ -4,3 +4,7 @@
 const PI = 2.1415 + 1;
 echo PI; //3.1516
 
+define('NUMBER', 22);
+echo NUMBER; // 22
+
+
