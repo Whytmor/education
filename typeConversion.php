@@ -12,3 +12,8 @@ $b = '10';
 echo is_numeric($a); //1
 echo '<br>';
 echo is_numeric($b); //1
+
+//Установка типа
+$a = 10.7;
+settype($a, 'integer');
+echo $a; //10
