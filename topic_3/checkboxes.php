@@ -28,7 +28,10 @@ if (isset($_POST['remember'])) {
         }
         if (isset($_POST['list'])) {
             $list = $_POST['list'];
-            echo $list;
+            foreach ($list as $item) {
+                echo "{$item} <br />";
+            }
+            //echo $list;
         }
         ?>
         <h3>Форма ввода данных</h3>
@@ -42,12 +45,12 @@ if (isset($_POST['remember'])) {
             <input type="radio" name="course" value="PHP" /> PHP <br>
             <input type="radio" name="course" value="Node.js" /> Node.js <br> 
             <h4>Список</h4>
-            <select name="list" size="1">
+            <select name="list[]" size="4" multiple="multiple">
                 <option value="ASP.NET">ASP.NET</option>
                 <option value="PHP">PHP</option>
                 <option value="Ruby">Ruby</option>
                 <option value="Python"> Python </option>
-            </select>
+            </select><br>
             <input type="submit" value="отправить">
             
         </form>
