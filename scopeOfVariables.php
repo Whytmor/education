@@ -19,3 +19,13 @@ switch ($i) {
 }
 echo $name; // bob
 
+// локальные переменные
+function showName() 
+{
+    $name = 'Tom';
+    echo $name;
+}
+
+showName();
+echo $name; /*так написать нельзя, тк
+                переменная $name существует только внутри функции showname()*/
