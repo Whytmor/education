@@ -29,3 +29,15 @@ function showName()
 showName();
 echo $name; /*так написать нельзя, тк
                 переменная $name существует только внутри функции showname()*/
+
+// статические переменные
+function getCounter()
+{
+    static $counter = 0;
+    $counter++;
+    echo $counter;
+}
+
+getCounter(); //counter= 1
+getCounter();// counter = 2
+getCounter(); // counter = 3
