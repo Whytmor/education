@@ -50,3 +50,23 @@ function hello()
     echo "Hello" . $name;
 }
 hello();
+
+$name = 'Tom';
+function changeName()
+{
+    global $name;
+    $name = 'Thomas';
+}
+changeName();
+echo $name; // Thomas
+
+$name = 'Tom';
+function changeName1()
+{
+    $userName = $GLOBALS['name'];
+    echo "Старое имя: {$userName} <br>";
+    // изменяем значение переменной $name
+    $GLOBALS['name'] = 'Tomas';
+}
+changeName1();
+echo "Новое имя:" . $name;
