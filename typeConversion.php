@@ -17,3 +17,8 @@ echo is_numeric($b); //1
 $a = 10.7;
 settype($a, 'integer');
 echo $a; //10
+
+//Преобразование типов
+$boolVar = false;
+$intVar = (int) $boolVar; //0
+echo "boolVar = {$boolVar} <br> intVar = {$intVar}";
