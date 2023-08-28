@@ -46,6 +46,7 @@ getCounter(); // counter = 3
 $name = 'Tom';
 function hello()
 {
+    global $name;
     echo "Hello" . $name;
 }
 hello();
