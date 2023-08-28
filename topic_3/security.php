@@ -10,10 +10,10 @@
         $name = 'не определено';
         $age = 'не определено';
         if (isset($_POST['name'])) {
-            $name = htmlspecialchars($_POST['name']);
+            $name = strip_tags($_POST['name']);
         }
         if (isset($_POST['age'])) {
-            $age = htmlspecialchars($_POST['age']);
+            $age = strip_tags($_POST['age']);
         }
         echo "Имя: {$name}<br> Возраст: {$age}";
         ?>
