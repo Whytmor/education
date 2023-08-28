@@ -41,3 +41,11 @@ function getCounter()
 getCounter(); //counter= 1
 getCounter();// counter = 2
 getCounter(); // counter = 3
+
+// глобальные переменные
+$name = 'Tom';
+function hello()
+{
+    echo "Hello" . $name;
+}
+hello();
