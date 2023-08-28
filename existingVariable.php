@@ -32,3 +32,10 @@ if (empty($message)) {
 } else {
     echo $message;
 }
+
+//уничтожение переменной
+$a = 20;
+echo $a; // 20
+unset($a);
+echo $a; // ошибка, переменная не определена
+
