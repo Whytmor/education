@@ -24,3 +24,11 @@ if (isset($message)) {
 } else {
     echo 'переменная не определена';
 }
+
+// оператор empty
+$message = '';
+if (empty($message)) {
+    echo 'переменная message не определена';
+} else {
+    echo $message;
+}
