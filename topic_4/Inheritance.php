@@ -2,6 +2,7 @@
 
 use Person as GlobalPerson;
 use Person1 as GlobalPerson1;
+use Person2 as GlobalPerson2;
 
 class Person
 {
@@ -15,7 +16,7 @@ class Person
         echo "Имя: {$this -> name}<br>";
     }
 }
-class Employee extends GlobalPerson
+class Employee extends Person
 {
 
 }
@@ -35,7 +36,7 @@ class Person1
         echo "Имя: {$this -> name}";
     }
 }
-class Employee1 extends GlobalPerson1
+class Employee1 extends Person1
 {
     public $company;
     function __construct($name, $company)
@@ -52,3 +53,56 @@ class Employee1 extends GlobalPerson1
 
 $tom = new Employee1('Tom', 'Microsoft');
 $tom -> displayInfo();
+
+//Вызов функционала родительского класса
+class Person2
+{
+    public $name;
+
+    function __construct($name)
+    {
+        $this -> name = $name;
+    }
+
+    function displayInfo()
+    {
+        echo "Имя: {$this -> name} <br>";
+    }
+}
+
+class Employee2 extends Person2 
+{
+    public $company;
+    function __construct($name, $company)
+    {
+        parent::__construct($name);
+        $this -> company = $company;
+    }
+
+    function displayInfo()
+    {
+        parent::displayInfo();
+        echo "Работает в {$this -> company} <br>";
+    }
+}
+
+$tom = new Employee2('Tom', 'Microsoft');
+$tom->displayInfo();
+
+class Employee3 extends Person2 
+{
+    public $company;
+    function __construct($name, $company)
+    {
+        Person2:: __construct($name);
+        $this -> company = $company;
+    }
+
+    function displayInfo()
+    {
+        Person2::displayInfo();
+        echo "Работает в {$this -> company}";
+    }
+}
+$tom1 = new Employee3('Tom1', 'Microsoft1');
+$tom1 -> displayInfo();
