@@ -84,7 +84,26 @@ class Person5
 
     function displayInfo()
     {
-        echo "Name: {$this->name}; Age: {$this->age}";
+        echo "Name: {$this->name}; Age: {$this->age}<br>";
+    }
+}
+
+class Person6
+{
+    public $name, $age;
+    function __construct($name, $age)
+    {
+        $this -> name = $name;
+        $this -> age = $age;
+    }
+    function getInfo()
+    {
+        echo "Имя: {$this->name}; Возраст: {$this->age}<br>";
+    }
+
+    function __destruct()
+    {
+        echo 'Вызов деструктора';
     }
 }
 
