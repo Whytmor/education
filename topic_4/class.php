@@ -38,4 +38,34 @@ echo "Имя пользователя: {$tom->name}<br>";
 echo "Возраст пользователя: {$tom->age}<br>";
 print_r($tom);
 
+class PersonThis
+{
+    public $name ='Undefined', $age = 18;
+    function displayInfo()
+    {
+        echo "Name: {$this->name}; Age: {$this->age} <br>";
+        
+    }
+}
 
+$tom = new PersonThis();
+$tom->name = 'Tom';
+$tom->displayInfo(); // name: Tom; Age: 18
+
+class Person4
+{
+    public $name = 'Undefined', $age = 18;
+
+    function displayInfo()
+    {
+        echo "Name: {$this->name}; Age: {$this->age}<br>";
+    }
+}
+$tom = new Person4();
+$tom->name = 'Tom';
+$tom->displayInfo();
+
+$bob = new Person4();
+$bob->name = 'Bob';
+$bob->age = 25;
+$bob->displayInfo();
