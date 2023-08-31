@@ -14,7 +14,7 @@ class Person
     }
 }
 namespace base\classes;
-class PersonNamespace
+class Person
 {
     public $name;
     function __construct($name)

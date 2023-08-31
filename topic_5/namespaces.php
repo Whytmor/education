@@ -1,5 +1,10 @@
 <?php
 namespace work;
+include __DIR__ . '/scripts/person.php';
+
+use \base\classes\Person as User;
+//use \base\classes\Person;
+
 class Person
 {
     public $name;
@@ -9,9 +14,21 @@ class Person
     }
 }
 
-include __DIR__ . '/scripts/person.php';
-$tom = new \base\classes\PersonNamespace('Tom');
+$tom = new \base\classes\Person('Tom');
 echo $tom -> name;
+
+$tom = new \base\classes\Person('Tomas');
+echo $tom -> name . '<br>';
+$bob = new \base\classes\Person('Bob');
+echo $bob -> name . '<br>';
+
+$tom = new User('Tomm');
+echo $tom -> name . '<br>';
+$bob = new User('Bobb');
+echo $bob -> name . '<br>';
+
+$tom = new Person('Tomas');
+echo $tom -> name . '<br>';
 ?>
 <!DOCTYPE html>
 <html>
