@@ -32,3 +32,4 @@ class EmailMessenger extends MessengerWork
 $outlook = new EmailMessenger('outlook');
 $outlook -> send("Hello PHP 8");
 $outlook -> close();
+
