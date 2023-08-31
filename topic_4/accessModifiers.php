@@ -49,3 +49,30 @@ $person -> getPublicMethod();
 //echo $person -> privateA; // недоступно так как private
 //echo $person -> protectedA; // недоступно так как protected
 echo $person -> publicA; 
+
+// Доступ к методам и свойствам объекта
+
+class Account 
+{
+    private $sum = 0;
+    function __construct($sum)
+    {
+        $this -> sum = $sum;
+    }
+    function getSumFrom($otherAccount, $money)
+    {
+        $otherAccount -> sum -= $money;
+        $this -> sum += $money;
+    }
+    function prinSum()
+    {
+        echo "На счёте {$this -> sum} y.e.<br>";
+    }
+}
+
+$acc1 = new Account(100);
+$acc2 = new Account(400);
+
+$acc1 ->getSumFrom($acc2, 200);
+$acc2 -> prinSum(); // на счёте 300 
+$acc1 -> prinSum();
