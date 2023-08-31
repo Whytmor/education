@@ -42,3 +42,4 @@ class Mess extends Data
 
 $myMessage = new Mess();
 $myMessage -> print(); // print from Pprinter
+
