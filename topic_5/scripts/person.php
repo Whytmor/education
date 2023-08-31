@@ -14,6 +14,11 @@ class Person
     }
 }
 namespace base\classes;
+const adminName = 'Odmen';
+function printPerson($person)
+{
+    echo $person -> name . '<br>';
+}
 class Person
 {
     public $name;

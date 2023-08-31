@@ -2,10 +2,12 @@
 namespace work;
 include __DIR__ . '/scripts/person.php';
 
-use \base\classes\Person as User, \base\classes\Employee as Employee;
+//use \base\classes\Person as User, \base\classes\Employee as Employee;
 //use \base\classes\Person;
 // use \base\classes\{Person as User, Employee as Employee};
-
+use \base\classes\Person as User, \base\classes\Employee;
+use const \base\classes\adminName;
+use function \base\classes\printPerson;
 class Person
 {
     public $name;
@@ -33,6 +35,10 @@ echo $tom -> name . '<br>';
 
 $bob = new Employee('Bob');
 echo $bob -> name . '<br>';
+
+$tom = new Person(adminName);
+printPerson($tom); // odmen
+
 ?>
 <!DOCTYPE html>
 <html>
