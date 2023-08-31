@@ -10,7 +10,7 @@ class Person
 }
 
 include __DIR__ . '/scripts/person.php';
-$tom = new \base\PersonNamespace('Tom');
+$tom = new \base\classes\PersonNamespace('Tom');
 echo $tom -> name;
 ?>
 <!DOCTYPE html>

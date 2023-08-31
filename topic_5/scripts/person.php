@@ -13,7 +13,7 @@ class Person
         echo "Name: {$this -> name}; Age: {$this -> age}<br>";
     }
 }
-
+namespace base\classes;
 class PersonNamespace
 {
     public $name;
