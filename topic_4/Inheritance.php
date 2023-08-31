@@ -4,6 +4,7 @@ use Person as GlobalPerson;
 use Person1 as GlobalPerson1;
 use Person2 as GlobalPerson2;
 use Person3 as GlobalPerson3;
+use Person4 as GlobalPerson4;
 
 class Person
 {
@@ -143,3 +144,50 @@ $tom = new Employee4('Tom', 'Microsoft');
 $tom instanceof Employee4; //true
 $tom instanceof Person3; // true
 $tom instanceof Manager; // false
+
+//Запрет наследования и оператор final
+//запрет на переопределение метода
+class Person4 
+{
+    public $name;
+    function __construct($name)
+    {
+        $this -> name = $name;
+    }
+    final function displayInfo()
+    {
+        echo "Имя: {$this -> name}<br>";
+    }
+}
+class Employee5 extends Person4
+{
+    public $company;
+    function __consturct($name, $company)
+    {
+        Person4::__construct($name);
+        $this -> company = $company;
+    }
+    function displayEmployeeInfo()
+    {
+        Person4::displayInfo();
+        echo "Работает в {$this -> company} <br>";
+    }
+    
+}
+
+$tom = new Employee5('Tomas', 'Apple');
+$tom -> displayEmployeeInfo();
+
+//Запрет на наследование класса
+final class Person5
+{
+    public $name;
+    function __constuct($name) 
+    {
+        $this -> name = $name;
+    }
+    final function displayInfo()
+    {
+        echo "Имя {$this -> name} <br>";
+    }
+}
