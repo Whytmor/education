@@ -1,5 +1,5 @@
 <?php
-namespace base;
+namespace work;
 class Person
 {
     public $name;
@@ -8,6 +8,10 @@ class Person
         $this -> name = $name;
     }
 }
+
+include __DIR__ . '/scripts/person.php';
+$tom = new \base\PersonNamespace('Tom');
+echo $tom -> name;
 ?>
 <!DOCTYPE html>
 <html>

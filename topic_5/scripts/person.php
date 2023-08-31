@@ -1,4 +1,5 @@
 <?php
+namespace base;
 class Person
 {
     private $name, $age;
@@ -10,5 +11,14 @@ class Person
     function printInfo()
     {
         echo "Name: {$this -> name}; Age: {$this -> age}<br>";
+    }
+}
+
+class PersonNamespace
+{
+    public $name;
+    function __construct($name)
+    {
+        $this -> name = $name;
     }
 }
