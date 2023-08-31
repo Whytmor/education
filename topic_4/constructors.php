@@ -41,3 +41,20 @@ $bob -> displayInfo('Bob');
 $sam = new Person('Sam', 29);
 $sam ->displayInfo();
 
+// Объявление свойств через конструктор
+class Person3 
+{
+    function __construct(public $name, public $age)
+    {
+        $this -> name = $name;
+        $this -> age = $age;
+    }
+
+    function displayInfo() 
+    {
+        echo "Name: {$this->name}; Age: {$this->age}<br>";
+    }
+}
+
+$tom = new Person3('Tommas', 34);
+$tom -> displayInfo();
