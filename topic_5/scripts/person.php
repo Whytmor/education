@@ -22,3 +22,5 @@ class Person
         $this -> name = $name;
     }
 }
+class Employee extends Person
+{}

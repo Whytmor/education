@@ -2,8 +2,9 @@
 namespace work;
 include __DIR__ . '/scripts/person.php';
 
-use \base\classes\Person as User;
+use \base\classes\Person as User, \base\classes\Employee as Employee;
 //use \base\classes\Person;
+// use \base\classes\{Person as User, Employee as Employee};
 
 class Person
 {
@@ -29,6 +30,9 @@ echo $bob -> name . '<br>';
 
 $tom = new Person('Tomas');
 echo $tom -> name . '<br>';
+
+$bob = new Employee('Bob');
+echo $bob -> name . '<br>';
 ?>
 <!DOCTYPE html>
 <html>
