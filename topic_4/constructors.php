@@ -58,3 +58,33 @@ class Person3
 
 $tom = new Person3('Tommas', 34);
 $tom -> displayInfo();
+
+class Person4
+{
+    public $name;
+    function __construct($name, public $age) 
+    {
+        $this -> name = $name;
+        $this -> age = $age;
+    }
+    function displayInfo()
+    {
+        echo "Name: {$this->name}; Age: {$this->age}<br>";
+    }
+}
+
+class Person5
+{
+    public $name;
+    function __construct($name = 'Tim', public $age = 22)
+    {
+        $this -> name = $name;
+        $this -> age = $age;
+    } 
+
+    function displayInfo()
+    {
+        echo "Name: {$this->name}; Age: {$this->age}";
+    }
+}
+
